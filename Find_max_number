@@ -1,0 +1,30 @@
+# Random-Modern-Approach-Codes
+
+#include <stdio.h>
+
+int main()
+{
+    int i, x;
+    float n, max;
+    
+    i = 0;
+    n = -1.0/0.0f;
+    x = 1;
+    printf("this program evaluates six numbers and determines the largest one\n\n");
+    
+    while (i < 6)
+        {
+            printf("Number %d: ", x);
+            scanf("%f", &max);
+            if (n < max)
+            {
+                n = max;
+            }
+            else n = n;
+            i++;
+            x++;
+        }
+    printf("\nthe largest number is %.2f", n);
+    return 0;
+}
+
