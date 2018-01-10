@@ -1,5 +1,7 @@
-# Random-Modern-Approach-Codes
-
+/*  Chapter 6 PP1
+    Written by: Alex Quach
+    Date: 01/10/2018 */
+    
 #include <stdio.h>
 
 int main()
