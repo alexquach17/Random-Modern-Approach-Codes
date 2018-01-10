@@ -1,0 +1,40 @@
+/*  Written by: Alex Quach
+    Date: 01/10/2018 */
+#include <stdio.h>
+
+int main()
+{
+    int GCD, m, n, o;
+    
+    printf("This program finds the Greatest Common Divisor (GCD) of two integers\n\nFirst number: ");
+    scanf("%d", &m);
+    printf("Second number: ");
+    scanf("%d", &n);
+ 
+    if(n > m)
+    {
+        o = n;
+        n = m;
+        m = o;
+    }
+    else 
+    {
+        m = m;
+        n = n;
+    }
+
+    while(n != 0)
+    {
+        o = n;
+        n = m%n;
+        m = o;
+    }
+    if(n == 0)
+    {
+        GCD = m;
+    }
+   printf("the GCD is: %d", GCD);
+    return 0;
+
+}
+
