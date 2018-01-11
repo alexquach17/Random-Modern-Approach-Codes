@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, j, k, days, start;
+    float comp, l;
+    
+    printf("this program prints the a calender\n");
+    printf("Number of days in the month: ");
+    scanf("%d", &days);
+    printf("Day month starts on (1 = Sunday, 2 = Monday, 3 = Tuesday,...): ");
+    scanf("%d", &start);
+    printf("\n");
+    printf(" S  M  T  W  R  F  S\n");
+    
+    for(j = 1; j < start ; j++ )
+        {
+            printf("   ");
+        }
+    for(i = 1; i <= days; i++)
+    {
+        printf("%.2d ", i);
+        
+        comp = ((j-1) + i)/7.0;
+        if(comp == 1 || comp == 2 || comp == 3 || comp == 4 || comp ==5)
+        {
+            printf("\n");
+        }
+        
+    }
+ return 0;   
+}
