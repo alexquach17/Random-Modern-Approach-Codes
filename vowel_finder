@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void)
+{
+  /* this code calculates the number of vowels in a string
+  Alex Quach
+  01/12/2018 */
+
+	int vowels, counter = 0;
+	char ch;
+
+	printf("Enter a statement: ");
+	while ((ch = getchar()) != '\n')
+	{
+		switch (toupper(ch)) {
+		case 'A': case 'E': case 'I': case 'O': case 'U':
+			counter++; break;
+		default:
+		break;
+		}
+	}
+	vowels = counter;
+	printf("the number of vowels is: %d\n", vowels);
+
+	return 0;
+
+}
