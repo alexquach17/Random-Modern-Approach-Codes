@@ -1,11 +1,12 @@
-#include <stdio.h>
-
-int main(void)
-{
-  /* this code calculates the number of vowels in a string
+ /* this code calculates the number of vowels in a string
   Alex Quach
   01/12/2018 */
 
+#include <stdio.h>
+#include<ctype.h>
+
+int main(void)
+{
 	int vowels, counter = 0;
 	char ch;
 
