@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int main()
+{
+	//this program should show what numbers are repeated in a string of numbers
+
+	int a[10] = { 0 }, dig, i, digit;
+	long long number;
+
+	printf("how many digits is your number: ");
+	scanf("%d", &dig);
+
+	printf("print %d digits: ", dig);
+	scanf("%lld", &number);
+
+	while (number > 0)
+	{
+		digit = number % 10;
+
+		if (a[digit] < 100)
+		{
+			a[digit] = a[digit]++;
+		}
+		number /= 10;
+	}
+
+	for (i = 0; i < 10; i++)
+	{
+		if (a[i] > 1)
+		{
+			printf("\nthe number %d was repeated %d times\n\n", i, a[i] - 1);
+		}
+	}
+
+}
