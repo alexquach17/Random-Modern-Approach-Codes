@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+
+	// this program finds the amount of digits in a number inputted by the user
+  
+	int i = 0;
+	long long num;
+
+	printf("what is the number: ");
+	scanf("%lld", &num);
+	
+
+	while (num > 0)
+	{
+		num /= 10;
+		i++;
+	}
+	printf("there are %d digits\n", i);
+
+	return 0;
+}
