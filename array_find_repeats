@@ -4,13 +4,10 @@ int main()
 {
 	//this program should show what numbers are repeated in a string of numbers
 
-	int a[10] = { 0 }, dig, i, digit;
+	int a[10] = { 0 }, i, digit;
 	long long number;
 
-	printf("how many digits is your number: ");
-	scanf("%d", &dig);
-
-	printf("print %d digits: ", dig);
+	printf("print a number less than 10E19 (1 with 19 zeros): ");
 	scanf("%lld", &number);
 
 	while (number > 0)
